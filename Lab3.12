@@ -1,0 +1,9 @@
+phone_number = int(input())
+
+phone_tem = phone_number
+phone_tem1 = int(phone_tem/10000000) #get800
+phone_tem2 = int((phone_tem%10000000)//10000) #8005551212 > 5551212 > get555
+phone_tem3 = phone_number %10000 #1212
+
+
+print(f'({phone_tem1}) {phone_tem2}-{phone_tem3}') 
